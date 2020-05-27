@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="AutomationEdgeSuite" verbose="10" parallel="false">
+  <test thread-count="1" name="Test">
+  <!--   <groups> -->
+<!--          <run> -->
+<!--             <include name = "TenantAdminPrerequisite" /> -->
+<!--          </run> -->
+<!--       </groups> -->
+    <classes>
+      <class name="com.ae.qa.testcases.TenantsPageTest"/>
+      <class name="com.ae.qa.testcases.SystemUsersPageTest"/>  
+<!--       <class name="com.ae.qa.testcasesTenantAdmin.HomePageTestTA"/> -->
+      <class name="com.ae.qa.testcases.SystemSettingsPageTest"/>  
+      <class name="com.ae.qa.testcases.TenantUsersPageTest"/> 
+      <class name="com.ae.qa.testcases.AuditLogsPageTest"/> 
+      <class name="com.ae.qa.testcases.InformationPageTest"/> 
+      <class name="com.ae.qa.testcases.SecurityQuestionsPageTest"/> 
+      <class name="com.ae.qa.testcases.LoginPageTest"/>  
+
+     
+
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
+

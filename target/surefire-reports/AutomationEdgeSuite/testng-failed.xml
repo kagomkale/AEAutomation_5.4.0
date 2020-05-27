@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AutomationEdgeSuite]">
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="com.ae.qa.testcases.TenantUsersPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="creatingTenantAdminTest"/>
+          <include name="initialization"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- com.ae.qa.testcases.TenantUsersPageTest -->
+      <class name="com.ae.qa.testcases.TenantsPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="validateaddNewTenantsWithDuplicateOrgCode"/>
+          <include name="validateAddNewTenant"/>
+          <include name="initialization"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- com.ae.qa.testcases.TenantsPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [AutomationEdgeSuite] -->

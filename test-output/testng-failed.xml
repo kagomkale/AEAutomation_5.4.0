@@ -3,15 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ae.qa.testcases.LoginPageTest">
+      <class name="com.ae.qa.testcases.TenantsPageTest">
         <methods>
           <include name="getResult"/>
+          <include name="verifyLicenseInfoTest"/>
           <include name="endReport"/>
+          <include name="validateaddNewTenantsWithDuplicateOrgCode"/>
+          <include name="validateAddNewTenant"/>
           <include name="initialization"/>
-          <include name="loginPageTitleTest"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- com.ae.qa.testcases.LoginPageTest -->
+      </class> <!-- com.ae.qa.testcases.TenantsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

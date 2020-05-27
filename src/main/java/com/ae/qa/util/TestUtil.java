@@ -17,8 +17,8 @@ import com.ae.qa.base.TestBase;
 import com.google.common.io.Files;
 
 public class TestUtil extends TestBase{
-	public static long IMPLICIT_WAIT=20;
-	public static long PAGE_LOAD_TIMEOUT=40;
+	public static long IMPLICIT_WAIT=80;
+	public static long PAGE_LOAD_TIMEOUT=120;
 
 	public void switchToFrame() {
 		driver.switchTo().frame("xyz");
@@ -48,7 +48,8 @@ public class TestUtil extends TestBase{
 			Object[][] data= new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 			for(int i=0;i<sheet.getLastRowNum();i++) {
 				for(int j=0;j<sheet.getRow(0).getLastCellNum();j++){
-					data[i][j]=sheet.getRow(i+1).getCell(j).toString();
+					//data[i][j]=sheet.getRow(i+1).getCell(j).toString();
+					data[i][j]=sheet.getRow(i+1).getCell(j);
 					}
 			}
 			return data;

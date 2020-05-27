@@ -23,9 +23,11 @@ public class TestBase {
 	public TestBase(){
 		try 
 		{
+		//object of Properties class
 		prop = new Properties();
-		//FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/ae/qa/config/config.properties");
+		//create object of FileInputStream class with the location of properties file
 		FileInputStream ip=new FileInputStream("C:\\Users\\Kalyani\\eclipse-workspace\\AutomationEdgePortal\\src\\main\\java\\com\\ae\\qa\\config\\config.properties");
+		//reading data from properties file using load method offered by Properties class 
 		prop.load(ip);	
 		}
 		catch(FileNotFoundException e)
@@ -42,6 +44,8 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\Kalyani\\eclipse-workspace\\webdrivertraining\\test\\resources\\chromedriver_new.exe");
+			//Initializing browser driver
+			//WebDriver driver=new ChromeDriver();
 			driver=new ChromeDriver();
 		} 
 	   else if(browserName.contentEquals("Firefox")) {
@@ -51,7 +55,7 @@ public class TestBase {
 	   else {
 			System.out.println("No browser value is given");
 		}
-		log.info("Browser started successfully");
+		//log.info("Browser started successfully");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);

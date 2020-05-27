@@ -1,0 +1,8 @@
+com\ae\qa\testcases\TenantsPageTest.class
+com\ae\qa\testcases\SystemSettingsPageTest.class
+com\ae\qa\testcases\SystemUsersPageTest.class
+com\ae\qa\testcasesTenantAdmin\HomePageTestTA.class
+com\ae\qa\testcases\TenantUsersPageTest.class
+com\ae\qa\testcasesTenantAdmin\LoginPageTestTA.class
+com\ae\qa\testcases\LoginPageTest1.class
+com\ae\qa\testcases\LoginPageTest.class
